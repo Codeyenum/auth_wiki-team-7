@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    padding: 0 1.25rem;
+    text-align: center;
+}
+
+/* ###---HEADER START---### */
+
+header, .desktop_nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;      
+    margin: 1.25rem 0;     
+}
+
+header .company-logo {
+    font-size: 1.4rem;
+    letter-spacing: .1rem;  
+    min-width: 9rem;
+    margin-right: 1rem;   
+}
+
+header a {
+    color: hsl(255, 11%, 22%);
+    text-decoration: none;
+}
+
+.company-logo {
+    color: hsl(180, 66%, 49%);
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .2rem;    
+}
+
+.desktop_nav {
+    display: none;    
+}
+
+.mobile_nav {
+    display: flex;    
+}
+
+.nav_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: hsl(255, 11%, 22%);
+    border-radius: 10px;
+    height: 60vh;
+    padding: 2rem 1.5rem;
+    width: 80vw;    
+
+    position: absolute;    
+    top: 4.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .7s ease-out;
+    z-index: 3;
+}
+
+.nav_card a {
+    color: white;    
+}
+
+.nav_card.hide {
+    left: -100vw;    
+}
+
+.menu_btn {    
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.menu_btn:hover {
+    color: hsl(180, 66%, 49%);
+}
+
+/* ###---HEADER END---### */
+
+/* ###---MAIN START---### */
+
+main {    
+    margin: 0 -1.25rem;
+    padding: 0 1.25rem;
+}
+
+/* ###---MAIN END---### */
+
+/* ###---FOOTER START---### */
+
+footer {
+    background-color: hsl(255, 11%, 22%);
+    margin: 0 -1.25rem;
+    padding: 1.25rem 0;
+}
+
+footer a:hover {
+    color: hsl(180, 66%, 49%);
+}
+
+.footer_nav {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_nav section {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0;
+}
+
+.footer_nav h4 {
+    font-size: .85rem;
+    margin: .5rem 0;
+}
+
+.footer_nav a {
+    color: hsl(0, 0%, 75%);
+    font-size: .75rem;
+    margin: .25rem 0;
+    text-decoration: none;
+}
+
+.socials a {
+    color: white;
+    font-size: 1.35rem;
+    margin: 0 .5rem;
+}
+
+/* ###---FOOTER END---### */
+
+/* ###---RESPONSIVE STYLING START---### */
+
+/* ---Tablets--- */
+@media screen and (min-width: 760px) {
+
+    header .menu_btn {
+        display: none;
+    }
+
+    .desktop_nav {
+        display: flex;
+        width: 80%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.25rem;
+        text-align: left;
+    }
+
+    .footer_nav {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+/* ---Desktops--- */
+@media screen and (min-width: 1020px) {
+
+    footer {        
+        flex-direction: row;        
+        justify-content: space-between;        
+    }
+
+    .footer_nav {        
+        width: 50%;
+    }
+}
+
+/* ###---RESPONSIVE STYLING END---### */
