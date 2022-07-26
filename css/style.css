@@ -47,7 +47,7 @@ header a {
 .company-logo {
     color: hsl(180, 66%, 49%);
     font-family: 'Lobster', cursive;
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 600;
     letter-spacing: .2rem;    
 }
@@ -147,7 +147,7 @@ footer a:hover {
 .socials a {
     color: white;
     font-size: 1.35rem;
-    margin: 0 .5rem;
+    margin: 0 .25rem;
 }
 
 /* ###---FOOTER END---### */
@@ -156,6 +156,10 @@ footer a:hover {
 
 /* ---Tablets--- */
 @media screen and (min-width: 760px) {
+
+    body {
+        padding: 0 6.5rem;
+    }    
 
     header .menu_btn {
         display: none;
@@ -170,7 +174,8 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1.25rem;
+        margin: 0 -6.5rem;
+        padding: 1.5rem 6.5rem;
         text-align: left;
     }
 
@@ -179,18 +184,26 @@ footer a:hover {
         justify-content: space-between;
         width: 100%;
     }
+
+    .footer_nav h4 {
+        font-size: .85rem;
+        margin: 0;
+        margin-top: -0.35rem;
+        margin-bottom: .5rem;
+    }
 }
 
 /* ---Desktops--- */
 @media screen and (min-width: 1020px) {
 
     footer {        
-        flex-direction: row;        
+        flex-direction: row;    
+        align-items: flex-start;    
         justify-content: space-between;        
     }
 
     .footer_nav {        
-        width: 50%;
+        width: 55%;
     }
 }
 
