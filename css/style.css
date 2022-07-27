@@ -11,7 +11,7 @@ html {
     font-size: 18px;
 }
 
-body {    
+body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,36 +24,45 @@ body {
 
 /* ###---HEADER START---### */
 
-header {    
+header {
     align-items: center;
     border-bottom: 1px solid gray;
     padding: 1.25rem 0;
 }
 
-header, .desktop_nav {
+header,
+.desktop_nav {
     display: flex;
-    flex-direction: row;    
-    justify-content: space-between;               
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header .company-logo {
     font-size: 1.25rem;
-    letter-spacing: .05rem;  
-    min-width: 7.25rem;    
-    text-align: left; 
+    letter-spacing: .05rem;
+    min-width: 7.25rem;
+    text-align: left;
 }
 
-header a, header button {
-    border: 1px solid #003E53;
-    background-color: white;
-    color: #003E53;
+header a,
+header button {
+    border: none;
+    background-color: #557E8C;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: .8rem;
+
+    height: 1.5rem;
+    padding: 0 .5rem;
+    text-align: center;
     text-decoration: none;
 }
 
-header a:hover, header button:hover {    
+header a:hover,
+header button:hover {
     background-color: #003E53;
-    color: white;
 }
 
 header input {
@@ -79,7 +88,7 @@ header input:focus {
     right: .25rem;
 }
 
-.search-bar input{
+.search-bar input {
     width: 100%;
     height: 1.3rem;
 }
@@ -89,15 +98,15 @@ header input:focus {
     font-family: 'Lobster', cursive;
     font-size: 1.75rem;
     font-weight: 600;
-    letter-spacing: .2rem;       
+    letter-spacing: .2rem;
 }
 
 .desktop_nav {
-    display: none;    
+    display: none;
 }
 
 .mobile_nav {
-    display: flex;    
+    display: flex;
 }
 
 .nav_card {
@@ -105,14 +114,14 @@ header input:focus {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    
+
     background-color: #003E53;
     border-radius: 10px;
     height: 60vh;
     padding: 2rem 1.5rem;
-    width: 80vw;    
+    width: 80vw;
 
-    position: absolute;    
+    position: absolute;
     top: 4.5rem;
     left: 50%;
     transform: translateX(-50%);
@@ -120,30 +129,23 @@ header input:focus {
     z-index: 3;
 }
 
-header a, header button {
-    border: 1px solid #003E53;
-    background-color: white;
-    color: #003E53;
-    font-size: .8rem;
-    text-decoration: none;
-}
-
-.nav_card a, .nav_card button {
+.nav_card a,
+.nav_card button {
     background-color: transparent;
-    color: white;    
+    color: white;
 }
 
 .nav_card.hide {
-    left: -100vw;    
+    left: -100vw;
 }
 
-.menu_btn {    
+.menu_btn {
     cursor: pointer;
     font-size: 1.25rem;
 }
 
 .menu_btn:hover {
-    color:#003E53;
+    color: #003E53;
 }
 
 /* ###---HEADER END---### */
@@ -209,8 +211,8 @@ footer a:hover {
 
     body {
         padding: 0 4rem;
-    } 
-    
+    }
+
     header {
         margin: 0 -4rem;
         padding: 1.25rem 4rem;
@@ -226,26 +228,33 @@ footer a:hover {
         margin: 0;
     }
 
-    header a, header button {               
-        border-radius: 3px; 
-        cursor: pointer;       
+    header a,
+    header button {
+        border-radius: 7px;
+        cursor: pointer;
         font-size: .7rem;
-        padding: .25rem .6rem;
+        /* padding: .25rem .6rem; */
     }
 
     .search-bar {
         display: none;
     }
 
-    header .login-btn {
-        background-color: #00BBF9;
+    header button {
+        border: 1px solid black;
+        background-color: transparent;
+        color: black;
+    }
+
+    header button:hover {
+        color: white;
     }
 
     .search-icon {
         cursor: pointer;
         display: block;
         font-size: .8rem;
-        
+
         position: absolute;
         right: .5rem;
         top: 50%;
@@ -271,9 +280,9 @@ footer a:hover {
         width: 80%;
     }
 
-    main {    
+    main {
         margin: 0 -4rem;
-        padding: 2.5rem 4rem;        
+        padding: 2.5rem 4rem;
     }
 
     footer {
@@ -305,21 +314,21 @@ footer a:hover {
 
     body {
         padding: 0 6.5rem;
-    } 
-    
+    }
+
     header {
         margin: 0 -6.5rem;
         padding: 1.25rem 6.5rem;
     }
 
-    header a {                
+    header a {
         font-size: .75rem;
-        padding: .45rem .75rem;
+        /* padding: .45rem .75rem; */
     }
 
-    main {    
+    main {
         margin: 0 -6.5rem;
-        padding: 3.5rem 6.5rem;        
+        padding: 3.5rem 6.5rem;
     }
 
     footer {
@@ -331,14 +340,14 @@ footer a:hover {
         text-align: left;
     }
 
-    footer {        
-        flex-direction: row;    
-        align-items: flex-start;    
-        justify-content: space-between;        
+    footer {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
     }
 
-    .footer_nav {  
-        margin: 0;      
+    .footer_nav {
+        margin: 0;
         width: 55%;
     }
 }
