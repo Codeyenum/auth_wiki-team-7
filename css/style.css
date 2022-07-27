@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
     padding: 0 1.25rem;
     text-align: center;
